@@ -4,7 +4,7 @@ A color picker prototype, based on React, SCSS-modules, boxed up in a Next.js 13
 
 My first approach would be to build this with Tailwind, but the requirements stated CSS or CSS-in-JS. Since CSS-in-JS is the work of sadists, I went with SCSS-modules.
 
-⚡️ Live Preview: https://bits-color-picker.vercel.app
+⚡️ Live Preview: https://bits-color-picker.on.hugos.computer
 
 ### How to run:
 1. Clone the repo
