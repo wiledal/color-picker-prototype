@@ -7,6 +7,7 @@ interface InputProps extends HTMLProps<HTMLInputElement> {
   error?: string;
   help?: string;
 }
+
 /**
  * An input field with a label and optional error and help text.
  */
