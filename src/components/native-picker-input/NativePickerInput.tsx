@@ -12,15 +12,7 @@ export const NativePickerInput = ({
   ...props
 }: HTMLProps<HTMLInputElement>) => {
   return (
-    <label
-      className={clsx(styles.nativePickerInput, className)}
-      style={
-        {
-          "--color": props.value,
-        } as CSSProperties
-      }
-    >
-      <PaletteIcon className={clsx(styles.icon, styles.shade)} />
+    <label className={clsx(styles.nativePickerInput, className)}>
       <PaletteIcon className={styles.icon} />
       <input className={styles.input} type="color" {...props} />
     </label>

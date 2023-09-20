@@ -12,19 +12,10 @@
     transition: none;
     scale: .98;
   }
-
-  color: var(--color);
 }
 
 .icon {
-  position: relative;
   display: block;
-}
-
-.shade {
-  position: absolute;
-  translate: 1px 1px;
-  color: rgb(var(--color-foreground));
 }
 
 .input {
