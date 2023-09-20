@@ -15,7 +15,6 @@
   line-height: 100%;
   color: rgb(var(--color-foreground));
   opacity: .08;
-  text-wrap: nowrap;
   font-weight: bold;
   transform: translate(-50%, -50%) rotate(-20deg);
   pointer-events: none;
@@ -35,7 +34,9 @@
 }
 
 .repeatingText {
+  position: relative;
   animation: repeatingText 100s linear infinite;
+  white-space: nowrap;
 
   &:nth-child(odd) {
     animation-direction: reverse;
@@ -45,6 +46,7 @@
 .repeatingTextRepeated {
   position: absolute;
   left: 100%;
+  top: 0;
   margin-left: 48px;
 
   &:nth-child(odd) {
