@@ -4,6 +4,13 @@ A color picker prototype, based on React, SCSS-modules, boxed up in a Next.js 13
 
 My first approach would be to build this with Tailwind, but the requirements stated CSS or CSS-in-JS. Since CSS-in-JS is the work of sadists, I went with SCSS-modules.
 
+⚡️ Live Preview: https://bits-color-picker.vercel.app
+
+### How to run:
+1. Clone the repo
+2. `yarn`
+3. `yarn dev`
+
 ### Features:
 - 💅 Pick a color 
   1. Using manual input, and pressing `<Return>`
@@ -13,7 +20,7 @@ My first approach would be to build this with Tailwind, but the requirements sta
 - 🌚 Dark mode
 
 ### If I had unlimited resources, I would:
-- [ ] Build up a framework of reusable mixins and tools in the scss-modules, for better reusability
+- [ ] Build up a framework of reusable mixins and tools in the scss-modules, for better reusability for things like colors and margins
 - [ ] Add unit tests using Jest and React-Testing-Library
 - [ ] Add e2e tests using Playwright
 - [ ] Improve on design and accessibility
