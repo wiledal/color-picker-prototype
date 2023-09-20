@@ -2,12 +2,16 @@
 
 import { Button } from "@/components/common/button/Button";
 import { MoonIcon, SunIcon } from "lucide-react";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 import styles from "./ThemeToggle.module.scss";
 
 export const ThemeToggle = () => {
-  const [theme, setTheme] = useState(localStorage.getItem("theme") || "light");
+  const [theme, setTheme] = useState("light");
+
+  useEffect(() => {
+    setTheme(localStorage.getItem("theme") || "light");
+  }, []);
 
   const toggleTheme = () => {
     const newTheme = theme === "light" ? "dark" : "light";
