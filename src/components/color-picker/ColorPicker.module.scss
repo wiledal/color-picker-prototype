@@ -1,0 +1,17 @@
+.colorPicker {
+  display: flex;
+  flex-direction: column;
+  gap: 16px; 
+}
+
+.inputs {
+  position: relative;
+  display: flex;
+  width: 100%;
+}
+
+.nativePicker {
+  position: absolute;
+  right: 0;
+  top: 26px;
+}

@@ -1,0 +1,32 @@
+.wrapper {
+  display: flex;
+  width: 100%;
+
+  filter: drop-shadow(0 8px 8px rgba(var(--color-foreground) / .2));
+}
+
+.colorShape {
+  margin: auto;
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  transition: all .5s ease;
+
+  background: var(--color);
+  transform: rotate(var(--rotation, 0deg));
+
+  &[data-variant="1"] {
+    border-radius: 50%;
+  }
+  &[data-variant="2"] {
+    border-radius: 0;
+  }
+  &[data-variant="3"] {
+    border-radius: 25%;
+  }
+  &[data-variant="4"] {
+    border-radius: 50% 0 0 0;
+  }
+  &[data-variant="5"] {
+    border-radius: 50% 0 50% 0;
+  }
+}

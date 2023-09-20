@@ -1,0 +1,55 @@
+@keyframes animateIn {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.colorForm {
+  position: relative;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  max-width: 980px;
+  border-radius: 20px;
+  padding: 40px;
+  gap: 80px;
+  border: 2px solid rgb(var(--color-foreground)/ .2);
+  background: rgb(var(--color-background));
+  animation: animateIn .5s ease;
+
+  box-shadow: 0 20px 40px 0 rgba(var(--color-foreground) / .2);
+
+  [data-theme="dark"] & {
+    box-shadow: 0 20px 40px 0 rgba(var(--color-foreground) / .2);
+  }
+
+  @media (max-width: 768px) {
+    flex-direction: column-reverse;
+    max-width: 340px;
+    gap: 40px;
+    padding: 24px;
+  }
+}
+
+.input {
+  width: 33%;
+  min-width: 256px;
+  flex-shrink: 0;
+
+  @media (max-width: 768px) {
+    width: 100%;
+  }
+}
+
+.preview {
+  width: 100%;
+
+  @media (max-width: 768px) {
+    max-width: 400px;
+  }
+}

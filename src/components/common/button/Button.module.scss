@@ -1,0 +1,72 @@
+.button {
+  background: transparent;
+  appearance: none;
+  border: none;
+  font: inherit;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  border: 1px solid transparent;
+
+  padding: 8px 12px;
+  border-radius: 8px;
+
+  cursor: pointer;
+
+  transition: all .2s ease;
+
+  &:hover {
+    scale: 1.01;
+  }
+  &:active {
+    transition: none;
+    scale: .99;
+  }
+}
+
+.variant--primary {
+  background: rgb(var(--color-foreground) / .85);
+  color: rgb(var(--color-background));
+  border: 1px solid rgb(var(--color-foreground));
+
+  &:hover {
+    background: rgb(var(--color-foreground));
+    color: rgb(var(--color-background));
+  }
+}
+
+.variant--secondary {
+  background: transparent;
+  color: rgb(var(--color-foreground) / .5);
+  border: 1px solid rgb(var(--color-foreground) / .5);
+
+  &:hover {
+    background: transparent;
+    color: rgb(var(--color-foreground));
+    border: 1px solid rgb(var(--color-foreground));
+  }
+}
+
+@keyframes rainbow {
+  0% {
+    background-position: 0% 50%;
+  }
+  100% {
+    background-position: -1000px 0;
+  }
+}
+
+.variant--rainbow {
+  background: rgb(var(--color-foreground) / .85);
+  color: rgb(var(--color-background));
+
+  &:hover {
+    background: linear-gradient(to right, red, blue, red);
+    background-size: 1000px;
+    animation: rainbow 8s linear infinite;
+    color: white;
+    border: 1px solid transparent;
+  }
+}

@@ -3,20 +3,26 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev",
+    "dev": "next dev --port 3008",
     "build": "next build",
     "start": "next start",
     "lint": "next lint"
   },
   "dependencies": {
+    "@hookform/resolvers": "3.3.1",
     "@types/node": "20.6.2",
     "@types/react": "18.2.22",
     "@types/react-dom": "18.2.7",
+    "clsx": "2.0.0",
     "eslint": "8.49.0",
     "eslint-config-next": "13.5.1",
+    "lucide-react": "0.279.0",
     "next": "13.5.1",
     "react": "18.2.0",
     "react-dom": "18.2.0",
-    "typescript": "5.2.2"
+    "react-hook-form": "7.46.1",
+    "sass": "1.67.0",
+    "typescript": "5.2.2",
+    "zod": "3.22.2"
   }
 }
