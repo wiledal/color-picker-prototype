@@ -2,7 +2,7 @@
 
 A color picker prototype, based on React, SCSS-modules, boxed up in a Next.js 13 (app router) package.
 
-My first approach would be to build this with Tailwind, but the requirements stated CSS or CSS-in-JS. Since CSS-in-JS is the work of sadists, I went with SCSS-modules. Since this is mostly an exercise in code, but a showcase of TypeScript and organization, I did not spend too much time on graphical fedility, but added some nice touches.
+My first approach would be to build this with Tailwind, but the requirements stated CSS or CSS-in-JS. Since CSS-in-JS is the work of sadists, I went with SCSS-modules. Since this is mostly an exercise in code, and a showcase of TypeScript and organization, I did not spend too much time on graphical fedility, but added some nice touches.
 
 ⚡️ Live Preview: https://bits-color-picker.on.hugos.computer
 
