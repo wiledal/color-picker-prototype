@@ -6,6 +6,9 @@ import { useEffect, useState } from "react";
 
 import styles from "./ThemeToggle.module.scss";
 
+/**
+ * A button that toggles between light and dark mode.
+ */
 export const ThemeToggle = () => {
   const [theme, setTheme] = useState("light");
 
