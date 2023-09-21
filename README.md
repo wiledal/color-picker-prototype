@@ -20,7 +20,12 @@ My first approach would be to build this with Tailwind, but the requirements sta
 - 🌚 Dark mode
 
 ### If I had unlimited resources, I would:
-- [ ] Build up a framework of reusable mixins and tools in the scss-modules, for better reusability for things like colors and margins
+- [ ] Build up a framework of reusable mixins and tools in the scss-modules, for things like
+  - Query selectors
+  - Colors
+  - Typography
+  - Magins
+  - etc.
 - [ ] Add unit tests using Jest and React-Testing-Library
 - [ ] Add e2e tests using Playwright
 - [ ] Improve on design and accessibility
